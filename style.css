@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    height:100vh;
+    background-image: url('images/bg.jpg');
+    background-position: 50% ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1{
+    background: linear-gradient(90deg, rgba(135, 255, 136, 0.9725140056022409) 0%, rgba(123, 233, 255, 0.9725140056022409) 46%, rgba(245, 123, 251, 0.9529061624649859) 100%);
+    padding: 15px 150px;
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+.choice {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choice img {
+    max-width: 100%;
+    height: 180px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    transition: ease 0.5s;
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: ease 1.3s;
+}
+
+.choice:hover {
+    background-color: #ffffff;
+}
+
+.scoring {
+    display: flex;
+    margin-top: 3rem;
+    gap: 5rem;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.scoring p{
+    font-weight: bolder;
+}
+.yourturn {
+    margin-top: 3rem;
+}
+
+#text {
+    background-color: #000000;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+
+}
+
+@media (max-width:500px){
+    .choice{
+        height: 120px;
+        margin: 2rem 0rem;
+    }
+    .choice img {
+        height: 100px;
+    }
+    .choices {
+        margin-top: 0;
+        gap: 0rem;
+    }
+    #text {
+        font-size:16px;
+    }
+    .heading{
+        height: 0rem;
+        display: inline-block;
+    }
+    h1{
+        padding: 0;
+        border-radius: 0;
+    }
+    .scoring {
+        margin-top: 0;
+        gap: 1rem;
+    }
+}
